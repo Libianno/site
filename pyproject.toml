@@ -17,6 +17,10 @@ blue = "^0.9.1"
 isort = "^5.13.2"
 taskipy = "^1.12.2"
 ruff = "^0.1.14"
+httpx = "^0.26.0"
+bs4 = "^0.0.2"
+google = "^3.0.0"
+rich = "^13.7.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -25,4 +29,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.taskipy.tasks]
 lint = 'ruff . && blue --check . --diff'
 format = 'blue .  && isort .'
-run = 'uvicorn fast_zero.app:app --reload'
+run = 'uvicorn app.main:app --reload'
