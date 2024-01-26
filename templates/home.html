@@ -1,0 +1,31 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    <h2>Site simplão</h2>
+    <div>
+        <h3>Animes que já vi</h3>
+        <ul>
+            <li><a href="https://www.crunchyroll.com/pt-br/series/GY3VKX1MR/hunter-x-hunter">Hunter x Hunter</a></li>
+            <li><a href="https://www.crunchyroll.com/pt-br/series/GRE50KV36/black-clover">Black Clover</a></li>
+            <li><a href="https://www.crunchyroll.com/pt-br/series/GRMG8ZQZR/one-piece">One Piece</a></li>
+            <li><a href="https://www.crunchyroll.com/pt-br/series/GRDV0019R/jujutsu-kaisen">Jujutsu Kaizen</a></li>
+            <li><a href="https://www.crunchyroll.com/pt-br/series/G63VGG2NY/bleach">Bleach</a></li>
+            <li><a href="https://www.crunchyroll.com/pt-br/series/GY9PJ5KWR/naruto">Naruto</a></li>
+            <li><a href="https://www.crunchyroll.com/pt-br/series/GYQ4MW246/naruto-shippuden">Naruto Shippuden</a></li>
+            
+            {% for anime in animes %}
+                <li>{{ anime }}</li>
+            {% endfor %}
+            
+        </ul>
+    </div>
+    <div>
+        <h3>Animes para ver</h3>
+        <ul>
+            <li>Cells at work</li>
+            <li>Overlord</li>
+            <li></li>
+        </ul>
+    </div>
+{% endblock %}
+
