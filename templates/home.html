@@ -14,7 +14,7 @@
             <li><a href="https://www.crunchyroll.com/pt-br/series/GYQ4MW246/naruto-shippuden">Naruto Shippuden</a></li>
             
             {% for anime in animes %}
-                <li>{{ anime }}</li>
+            <li><a href={{animes[anime]}}>{{anime}}</a></li>
             {% endfor %}
             
         </ul>
@@ -22,10 +22,27 @@
     <div>
         <h3>Animes para ver</h3>
         <ul>
-            <li>Cells at work</li>
-            <li>Overlord</li>
+            <li><a href="https://www.crunchyroll.com/pt-br/series/GR3KVPQER/cells-at-work">Cells at work</a></li>
+            <li><a href="https://www.crunchyroll.com/pt-br/series/G69PZ5PDY/overlord">Overlord</a></li>
             <li></li>
         </ul>
+    </div>
+    <div>
+        <h3>Personagens preferidos</h3>
+        <div id="Esquerda">
+            <h4>Animes</h4>
+            <ul>
+                <li>Kilua - Hunter x Hunter</li>
+            </ul>
+        </div>
+        <div id="Direita">
+            <h4>Series</h4>
+            <ul>
+                <li>Arya Stark - Game of Thrones</li>
+                <li>Harvey Spectre - Suits</li>
+                <li>Shaun Murphy - The Good Doctor</li>
+            </ul>
+        </div>
     </div>
 {% endblock %}
 
